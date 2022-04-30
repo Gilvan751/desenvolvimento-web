@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+}
+header, section {
+    padding: 5rem;
+}
+header {
+    background-color: #2196f3;
+}
+main {
+    width: 1200px;
+    margin: auto;
+
+    display: grid;
+   
+    grid-template-areas:
+    "video-player   video-player" 
+      "video-info     video-info" 
+      "actions        actions" 
+      "channel        subscribe" 
+      "ad              ad"
+      "up-nex         up-nex" ;
+}
+
+.video-info{
+    background-color: #a9eb30;
+    grid-area: video-info;
+}
+.actions{
+    background-color: #b41227;
+    grid-area: actions;
+}
+.video-player{
+    background-color: #24b93d;
+    grid-area: video-player;
+}
+.channel{
+    background-color: #2c0b79;
+    grid-area: channel;
+}
+.subscribe{
+    background-color: #1dc2b4;
+    grid-area: subscribe;
+}
+.ad{
+    background-color: #1978c5;
+    grid-area: ad;
+    display: none;
+}
+.up-nex{
+    background-color: #a00d94;
+    grid-area: up-nex;
+}    
