@@ -13,7 +13,8 @@ header {
     padding: 2rem;
 }
 .logo img {
-    width: 211px;
+    max-width: 100%;
+    display: block;
 }
 .sign-in {
     display: flex;
@@ -148,4 +149,10 @@ p.copyright {
     color: #ffffffdd;
     padding: 3rem 0;
     text-align: center;
+}
+@media (max-width:450) {
+    .sign-in {
+    display: block;
+    justify-content: center;
+}
 }
