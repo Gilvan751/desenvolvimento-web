@@ -13,7 +13,7 @@ header {
     background-color: #2196f3;
 }
 main {
-    width: 1200px;
+    
     margin: auto;
 
     display: grid;
@@ -28,15 +28,15 @@ main {
 }
 
 .video-info{
-    background-color: #a9eb30;
+    background-color: red;
     grid-area: video-info;
 }
 .actions{
-    background-color: #b41227;
+    background-color: #a7caeb;
     grid-area: actions;
 }
 .video-player{
-    background-color: #24b93d;
+    background-color:yellow;
     grid-area: video-player;
 }
 .channel{
@@ -48,11 +48,30 @@ main {
     grid-area: subscribe;
 }
 .ad{
-    background-color: #1978c5;
+    background-color: orange;
     grid-area: ad;
-    display: none;
+    
 }
 .up-nex{
     background-color: #a00d94;
     grid-area: up-nex;
 }    
+@media screen and (max-width:700px) {
+    .ad {
+        display: none;
+    }
+}
+@media screen and (min-width:700px) {
+    main {
+        width: 1000px;
+
+    grid-template-areas:
+    "video-player   video-player   ad" 
+    "video-player   video-player   up-nex" 
+     "video-info     actions   up-nex " 
+     "channel        subscribe    up-nex";
+      
+           
+    }
+    
+}
